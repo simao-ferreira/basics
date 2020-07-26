@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info:
+  version: 0.0.1
+  title: Basics API
+  description: Simple API tests.
+servers:
+  - url: 'v1/basics'
+
+tags:
+  - name: test-entry-point
+    description: "Entry point for testing functionality and implementation"
+
+paths:
+  /test:
+    get:
+      tags:
+        - "test-entry-point"
+      summary: Returns an integer.
+      description: "Temporary endpoint for testing purposes"
+#      operationId: "getInventory"
+      responses:
+        '200':
+          description: "successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: integer
+                  format: int32
