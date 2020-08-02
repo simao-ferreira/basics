@@ -28,13 +28,14 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation ("org.springdoc:springdoc-openapi-ui:1.4.3")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	annotationProcessor("org.projectlombok:lombok")
-	testImplementation( "org.codehaus.groovy:groovy-all:2.3.11")
-	testImplementation( "org.spockframework:spock-core:2.3.11")
-	testImplementation( "org.spockframework:spock-spring:2.3.11")
+	testImplementation( "org.codehaus.groovy:groovy-all:3.0.5")
+	testImplementation( "org.spockframework:spock-core:2.0-M3-groovy-3.0")
+	testImplementation( "org.spockframework:spock-spring:2.0-M3-groovy-3.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}

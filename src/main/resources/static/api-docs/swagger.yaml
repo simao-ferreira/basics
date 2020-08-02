@@ -4,20 +4,19 @@ info:
   title: Basics API
   description: Simple API tests.
 servers:
-  - url: 'v1/basics'
+  - url: '/v1/basics'
 
 tags:
-  - name: test-entry-point
+  - name: integers
     description: "Entry point for testing functionality and implementation"
 
 paths:
-  /test:
+  /int:
     get:
       tags:
-        - "test-entry-point"
+        - "integers"
       summary: Returns an integer.
       description: "Temporary endpoint for testing purposes"
-#      operationId: "getInventory"
       responses:
         '200':
           description: "successful operation"
